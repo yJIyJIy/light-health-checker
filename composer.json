@@ -1,0 +1,12 @@
+{
+    "name": "yjiyjiy/light-health-checker",
+    "description": "Simple health checker",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Alex Zosimov",
+            "email": "zosimov.alex@gmail.com"
+        }
+    ],
+    "require": {}
+}
