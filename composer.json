@@ -8,5 +8,24 @@
             "email": "zosimov.alex@gmail.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "HealthChecker\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5",
+        "phpmd/phpmd": "^2.9",
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check": [
+            "./vendor/bin/phpmd src text cleancode,codesize,controversial,design,naming,unusedcode",
+            "./vendor/bin/phpcs --standard=PSR12 src"
+            ]
+    }
 }

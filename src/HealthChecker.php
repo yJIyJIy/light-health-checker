@@ -22,6 +22,9 @@ class HealthChecker
             foreach ($this->checkers as $name => $checker) {
                 /** @var CheckerInterface $checker */
                 $result[$name] = $this->fireOne($checker);
+                if (!$result[$name]) {
+                    break;
+                }
             }
         } catch (\Throwable $e) {
             $result[$name] = $e->getMessage();
@@ -37,8 +40,8 @@ class HealthChecker
             /** @var CheckerInterface $checker */
             try {
                 $result[$name] = $this->fireOne($checker);
-            } catch (\Throwable $e) {
-                $result[$name] = $e->getMessage();
+            } catch (\Throwable $exception) {
+                $result[$name] = $exception->getMessage();
             }
         }
 
