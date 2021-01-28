@@ -1,8 +1,8 @@
 <?php
 
-namespace HealthChecker\Checkers;
+namespace yJIyJIy\HealthChecker\Checkers;
 
-use HealthChecker\Interfaces\CheckerInterface;
+use yJIyJIy\HealthChecker\Interfaces\CheckerInterface;
 
 class IsWritablePath implements CheckerInterface
 {

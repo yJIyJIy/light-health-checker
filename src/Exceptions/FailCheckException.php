@@ -1,6 +1,6 @@
 <?php
 
-namespace HealthChecker\Exceptions;
+namespace yJIyJIy\HealthChecker\Exceptions;
 
 class FailCheckException extends \Exception
 {

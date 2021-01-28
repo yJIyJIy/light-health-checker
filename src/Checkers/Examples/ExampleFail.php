@@ -1,8 +1,8 @@
 <?php
 
-namespace HealthChecker\Checkers\Examples;
+namespace yJIyJIy\HealthChecker\Checkers\Examples;
 
-use HealthChecker\Interfaces\CheckerInterface;
+use yJIyJIy\HealthChecker\Interfaces\CheckerInterface;
 
 class ExampleFail implements CheckerInterface
 {

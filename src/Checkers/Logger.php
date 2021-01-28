@@ -1,8 +1,8 @@
 <?php
 
-namespace HealthChecker\Checkers;
+namespace yJIyJIy\HealthChecker\Checkers;
 
-use HealthChecker\Interfaces\CheckerInterface;
+use yJIyJIy\HealthChecker\Interfaces\CheckerInterface;
 use Psr\Log\LoggerInterface;
 
 class Logger implements CheckerInterface

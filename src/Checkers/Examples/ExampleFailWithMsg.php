@@ -1,14 +1,14 @@
 <?php
 
-namespace HealthChecker\Checkers\Examples;
+namespace yJIyJIy\HealthChecker\Checkers\Examples;
 
-use Exception;
-use HealthChecker\Interfaces\CheckerInterface;
+use yJIyJIy\HealthChecker\Exceptions\FailCheckException;
+use yJIyJIy\HealthChecker\Interfaces\CheckerInterface;
 
 class ExampleFailWithMsg implements CheckerInterface
 {
     public function check(): bool
     {
-        throw new Exception('Fail message');
+        throw new FailCheckException('Fail message');
     }
 }

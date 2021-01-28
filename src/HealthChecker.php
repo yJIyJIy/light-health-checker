@@ -1,8 +1,8 @@
 <?php
 
-namespace HealthChecker;
+namespace yJIyJIy\HealthChecker;
 
-use HealthChecker\Interfaces\CheckerInterface;
+use yJIyJIy\HealthChecker\Interfaces\CheckerInterface;
 
 class HealthChecker
 {

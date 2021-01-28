@@ -12,7 +12,12 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "HealthChecker\\": "src/"
+            "yJIyJIy\\HealthChecker\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
     },
     "require": {
@@ -27,7 +32,9 @@
         "test": "phpunit",
         "check": [
             "./vendor/bin/phpmd src text cleancode,codesize,controversial,design,naming,unusedcode",
-            "./vendor/bin/phpcs --standard=PSR12 src"
+            "./vendor/bin/phpmd tests text cleancode,codesize,controversial,design,naming,unusedcode",
+            "./vendor/bin/phpcs --standard=PSR12 src",
+            "./vendor/bin/phpcs --standard=PSR12 tests"
             ]
     }
 }

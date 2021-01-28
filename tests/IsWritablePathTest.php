@@ -1,6 +1,9 @@
 <?php
 
-use HealthChecker\Checkers\IsWritablePath;
+namespace yJIyJIy\HealthChecker;
+
+use Throwable;
+use yJIyJIy\HealthChecker\Checkers\IsWritablePath;
 use PHPUnit\Framework\TestCase;
 
 class IsWritablePathTest extends TestCase

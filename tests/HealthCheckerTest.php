@@ -1,9 +1,10 @@
 <?php
 
-use HealthChecker\Checkers\Examples\ExampleFail;
-use HealthChecker\Checkers\Examples\ExampleFailWithMsg;
-use HealthChecker\Checkers\Examples\ExampleSuccess;
-use HealthChecker\HealthChecker;
+namespace yJIyJIy\HealthChecker;
+
+use yJIyJIy\HealthChecker\Checkers\Examples\ExampleFail;
+use yJIyJIy\HealthChecker\Checkers\Examples\ExampleFailWithMsg;
+use yJIyJIy\HealthChecker\Checkers\Examples\ExampleSuccess;
 use PHPUnit\Framework\TestCase;
 
 class HealthCheckerTest extends TestCase

@@ -1,6 +1,6 @@
 <?php
 
-namespace HealthChecker\Interfaces;
+namespace yJIyJIy\HealthChecker\Interfaces;
 
 interface CheckerInterface
 {
