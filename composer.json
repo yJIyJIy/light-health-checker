@@ -8,6 +8,8 @@
             "email": "zosimov.alex@gmail.com"
         }
     ],
+    "license": "Apache-2.0",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "HealthChecker\\": "src/"
